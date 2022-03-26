@@ -3,7 +3,12 @@
     color: hsl(0, 100%, 50%);
 }
 
-.small-para {
+/* I'm a smaller paragraph, also with red text! 
+Due to Rule Order in .para.small-para, the last defined have the properties*/
+/*.small-para {
+    font-size: 14px;
+}*/
+.para.small-para {
     font-size: 14px;
 }
 
@@ -11,11 +16,17 @@
     font-size: 22px;
 }
 
+/*.Rule Order
 .confirm {
     background: green;
     color: white;
     font-weight: bold;
-} 
+} */
+.button.confirm {
+    background: green;
+    color: white;
+    font-weight: bold;
+}
 
 .button {
     background-color: rgb(255, 255, 255);
@@ -23,7 +34,14 @@
     font-size: 20px;
 }
 
+/*
+Rule order
 .child {
+    color: red;
+    font-size: 14px;
+}
+*/
+.text .child {
     color: red;
     font-size: 14px;
 }
